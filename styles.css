@@ -1,4 +1,3 @@
-/* GLOBAL RESET */
 *{
     padding: 0;
     margin: 0;
@@ -50,7 +49,7 @@ header{
     color:#8B4513; /* bakery brown */
 }
 
-/* NAVIGATION */
+/* NAV */
 nav ul{
     display:flex;
     gap: 20px;
@@ -128,22 +127,13 @@ main{
     font-size:1.2em;
 }
 
-/* HERO IMAGE PLACEHOLDER */
-.mangager-image .placeholder-image{
-    width:100%;
-    height:300px;
-    background-color:#FFE4C4;
-    border:2px dashed #D2691E;
+/* HERO IMAGE */
+.mangager-image{
+    width:50%;
     border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#A0522D;
-    font-weight:bold;
-    text-transform:uppercase;
 }
 
-/* MENU / SERVICES */
+/* MENU */
 #menu{
     width:90%;
 }
@@ -154,12 +144,14 @@ main{
     margin-bottom:20px;
 }
 
+/* GRID */
 #service-container{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     gap:30px;
 }
 
+/* CARD */
 .service-item{
     padding:20px;
     background-color:#FFF;
@@ -172,22 +164,15 @@ main{
     text-align:center;
 }
 
-
-.service-item .placeholder-image{
+/* IMAGES */
+.images{
     width:100%;
-    height:300px;
-    background-color:#FFE4C4;
-    border:2px dashed #D2691E;
-    border-radius:15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#A0522D;
-    font-weight:bold;
-    text-transform:uppercase;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-
+/* ABOUT */
 #about{
     width:90%;
     background-color:#FFE4C4;
@@ -208,18 +193,9 @@ main{
     gap:20px;
 }
 
-#team-image .placeholder-image{
-    width:100%;
-    height:250px;
-    background-color:#FFE4C4;
-    border:2px dashed #D2691E;
+#team-image{
+    width:50%;
     border-radius:15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#A0522D;
-    font-weight:bold;
-    text-transform:uppercase;
 }
 
 /* CONTACT */
@@ -281,15 +257,15 @@ footer a{
         text-align:center;
     }
 
-    .mangager-image .placeholder-image{
-        height:200px;
+    .mangager-image{
+        width:100%;
     }
 
     #aboutUs{
         flex-direction:column;
     }
 
-    .about-text, #team-image .placeholder-image{
+    .about-text, #team-image{
         width:100%;
     }
 }
