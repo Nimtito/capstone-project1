@@ -20,6 +20,13 @@ Build a simple and responsive website that has images of the products, has order
  * HTML
  * CSS
  * Tailwind CSS
+
+ ##  Author
+Nimrod Kyalo  
+GitHub: https://github.com/nimtito
+
+##  Copyright
+© 2026 Nimrod. All rights reserved.
  
  
 
