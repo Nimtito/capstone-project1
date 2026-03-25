@@ -1,143 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kabz Bakery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
+<header class="header">
+    <div id="logo_div">
+        <img src="images/logo.png" class="logo">
+        <h1>Kabz Bakery</h1>
+    </div>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div id="logo_div">
-            <img src="images/logo.png" alt="Kabz Bakery Logo" class="logo">
-            <h1>Kabz Bakery</h1>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="https://wa.me/2547XXXXXXXX" target="_blank">
+        <button id="header-btn">Order Now</button>
+    </a>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+    <div id="hero-h1">
+        <h1>Freshly Baked Happiness Every Day</h1>
+        <p>Delicious cakes, pastries, and bread made with love.</p>
+        <a href="#menu"><button>Explore Menu</button></a>
+    </div>
+    <img src="images/Bakery.jpg" class="bakery-image">
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <div id="service-container">
+
+        <div class="service-item">
+            <img src="images/cake.jpg" class="images">
+            <h3>Cakes</h3>
+            <p>Ksh 1500 - 5000</p>
+            <a href="https://wa.me/2547XXXXXXXX?text=I%20want%20cake">
+                <button>Order</button>
+            </a>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="service-item">
+            <img src="images/pastries.jpg" class="images">
+            <h3>Pastries</h3>
+            <p>Ksh 100 - 500</p>
+            <a href="https://wa.me/2547XXXXXXXX?text=I%20want%20pastries">
+                <button>Order</button>
+            </a>
+        </div>
 
-        <button id="header-btn">Order Now</button>
-    </header>
+        <div class="service-item">
+            <img src="images/bread.jpg" class="images">
+            <h3>Bread</h3>
+            <p>Ksh 50 - 200</p>
+            <a href="https://wa.me/2547XXXXXXXX?text=I%20want%20bread">
+                <button>Order</button>
+            </a>
+        </div>
 
-    <!-- MAIN -->
-    <main class="main">
+        <div class="service-item">
+            <img src="images/desserts.jpg" class="images">
+            <h3>Desserts</h3>
+            <p>Ksh 200 - 800</p>
+            <a href="https://wa.me/2547XXXXXXXX?text=I%20want%20desserts">
+                <button>Order</button>
+            </a>
+        </div>
 
-        <!-- HERO SECTION -->
-        <section id="hero">
-            <div id="hero-h1">
-                <h1>Freshly Baked Happiness Every Day</h1>
-                <p>Welcome to Kabz Bakery, where every bite is made with love. From cakes to pastries, we bring you the finest baked goods in town.</p>
-                <button class="hero-btn">Explore Menu</button>
-            </div>
+    </div>
+</section>
 
-            <img src="images/bakery.jpg" alt="Bakery Image" class="manager-image">
-        </section>
+<!-- ORDER -->
+<section id="order">
+    <h2>Place Your Order</h2>
 
-        <!-- MENU PREVIEW -->
-        <section id="menu">
-            <h2>Our Menu</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="tel" placeholder="Phone Number">
 
-            <div id="service-container">
+        <select>
+            <option>Select Item</option>
+            <option>Cake</option>
+            <option>Pastries</option>
+            <option>Bread</option>
+            <option>Desserts</option>
+        </select>
 
-                <div class="service-item">
-                    <img src="images/cake.jpg" alt="Cakes" class="images">
-                    <h3>Cakes</h3>
-                    <p>Delicious custom cakes for birthdays, weddings, and special occasions.</p>
-                    <button>View More</button>
-                </div>
+        <input type="number" placeholder="Quantity">
 
-                <div class="service-item">
-                    <img src="images/pastries.jpg" alt="Pastries" class="images">
-                    <h3>Pastries</h3>
-                    <p>Fresh pastries baked daily with rich flavors and soft textures.</p>
-                    <button>View More</button>
-                </div>
+        <button>Submit Order</button>
+    </form>
+</section>
 
-                <div class="service-item">
-                    <img src="images/bread.jpg" alt="Bread" class="images">
-                    <h3>Bread</h3>
-                    <p>Soft, healthy, and freshly baked bread for your everyday needs.</p>
-                    <button>View More</button>
-                </div>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
 
-                <div class="service-item">
-                    <img src="images/desserts.jpg" alt="Desserts" class="images">
-                    <h3>Desserts</h3>
-                    <p>Sweet treats that bring joy to every moment with every bite.</p>
-                    <button>View More</button>
-                </div>
+    <div class="contact-info">
+        <p>📞 0712 345 678</p>
+        <p>📧 kabzbakery@gmail.com</p>
+        <p>📍 Nairobi, Kenya</p>
+        <p>🕒 Mon - Sat: 8AM - 8PM</p>
+    </div>
 
-            </div>
-        </section>
+    <a href="https://wa.me/2547XXXXXXXX">
+        <button>Chat on WhatsApp</button>
+    </a>
+</section>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <div id="aboutUs">
+</main>
 
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Kabz Bakery is dedicated to delivering fresh, high-quality baked goods made with passion and care.</p>
-                    <p>We specialize in cakes, pastries, bread, and desserts, ensuring every product meets the highest standards of taste and quality.</p>
-                </div>
-
-                <img src="images/team.jpg" alt="Bakery Team" id="team-image">
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-
-            <div class="contact-form">
-                <form action="#" method="post">
-
-                    <div class="form-divs">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Your name" required>
-                    </div>
-
-                    <div class="form-divs">
-                        <label>Email</label>
-                        <input type="email" placeholder="Your email" required>
-                    </div>
-
-                    <div class="form-divs">
-                        <label>Phone Number</label>
-                        <input type="text" placeholder="Your phone number" required>
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Kabz Bakery</p>
-
-        <nav>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Tiktok</a></li>
-            </ul>
-        </nav>
-    </footer>
-
-</div>
+<footer>
+    <p>&copy; 2026 Kabz Bakery</p>
+</footer>
 
 </body>
 </html>
