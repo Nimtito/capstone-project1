@@ -1,4 +1,5 @@
-#KABZ  BAKERY WEBSITE
+KABZ  BAKERY WEBSITE
+
 ## Description
 Kabz smart bakery is a simple and responsive website built to help a local bakery showcase its products and receive customers online
 
@@ -19,7 +20,7 @@ Build a simple and responsive website that has images of the products, has order
  * HTML
  * CSS
  * Tailwind CSS
- * Figma
+ 
  
 
 
