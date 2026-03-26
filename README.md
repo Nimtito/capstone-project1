@@ -25,10 +25,11 @@ Build a simple and responsive website that has images of the products, has order
 Nimrod Kyalo  
 GitHub: https://github.com/nimtito
 
-##  Copyright
-© 2026 Nimrod. All rights reserved.
+## Contributors
+Anyone who wants to contribute to this project is welcomed and can clone
  
- ### This project is under  MIT license
+ ## License
+ This project is licensed under MIT license
  
 
 
