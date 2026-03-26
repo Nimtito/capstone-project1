@@ -28,6 +28,7 @@ GitHub: https://github.com/nimtito
 ##  Copyright
 © 2026 Nimrod. All rights reserved.
  
+ ### This project is under  MIT license
  
 
 
