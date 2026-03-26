@@ -21,7 +21,7 @@
         </ul>
     </nav>
 
-    
+    <a href="order.html">
         <button id="header-btn">Order Now</button>
     
 </header>
@@ -30,22 +30,23 @@
 
 <section id="contact">
     <h2>Place Your Order</h2>
+<form class="order-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
 
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="tel" placeholder="Phone Number">
+    <select required>
+        <option value="">Select Product</option>
+        <option>Cake</option>
+        <option>Pastries</option>
+        <option>Bread</option>
+        <option>Desserts</option>
+    </select>
 
-        <select>
-            <option>Select Item</option>
-            <option>Cake</option>
-            <option>Pastries</option>
-            <option>Bread</option>
-            <option>Desserts</option>
-        </select>
+    <input type="number" placeholder="Quantity" required>
 
-        <input type="number" placeholder="Quantity">
-
-        <button>Submit Order</button>
+    <button type="submit">Submit Order</button>
+</form>
+    
     </form>
 
 </section>
