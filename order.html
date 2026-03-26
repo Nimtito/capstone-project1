@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Kabz Bakery</title>
+    <title>Order - Kabz Bakery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,24 +28,26 @@
 
 <main>
 
-<section id="hero">
-    <div id="hero-h1">
-        <h1>Freshly Baked Happiness Every Day</h1>
-        <p>Delicious cakes, pastries, and bread made with love.</p>
-        <a href="menu.html"><button>Explore Menu</button></a>
-    </div>
+<section id="contact">
+    <h2>Place Your Order</h2>
 
-    <img src="images/bakery.jpg" class="bakery">
-</section>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="tel" placeholder="Phone Number">
 
-<section id="about">
-    <div id="aboutUs">
-        <div class="about-text">
-            <h2>About Kabz Bakery</h2>
-            <p>We create fresh, high-quality baked goods every day.</p>
-        </div>
-        <img src="images/team.jpg" id="team-image">
-    </div>
+        <select>
+            <option>Select Item</option>
+            <option>Cake</option>
+            <option>Pastries</option>
+            <option>Bread</option>
+            <option>Desserts</option>
+        </select>
+
+        <input type="number" placeholder="Quantity">
+
+        <button>Submit Order</button>
+    </form>
+
 </section>
 
 </main>
