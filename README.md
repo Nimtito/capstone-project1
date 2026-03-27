@@ -27,6 +27,8 @@ GitHub: https://github.com/nimtito
 
 ## Contributors
 Anyone who wants to contribute to this project is welcomed and can clone
+
+```https://github.com/Nimtito/capstone-project1.git```
  
  ## License
  This project is licensed under MIT license
