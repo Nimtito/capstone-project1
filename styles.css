@@ -1,6 +1,4 @@
-/* =========================
-   RESET
-========================= */
+
 *{
     margin:0;
     padding:0;
@@ -210,7 +208,7 @@ section{
     gap:12px;
 }
 
-.contact-form input,
+
 .contact-form textarea{
     width:280px;
     max-width:90%;
