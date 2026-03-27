@@ -19,7 +19,7 @@ Build a simple and responsive website that has images of the products, has order
 # Technologies Used
  * HTML
  * CSS
- * Tailwind CSS
+ 
 
  ##  Author
 Nimrod Kyalo  
