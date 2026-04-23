@@ -18,12 +18,13 @@
             <li><a href="menu.html">Menu</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html"> Cart</a></li>
+
         </ul>
     </nav>
 
     <a href="order.html">
-        <button id="header-btn">Order Now</button>
-    </a>
+    </a><button onclick="openModal('cake')">View More</button>
 </header>
 
 <main>
@@ -39,7 +40,10 @@
             <p>Soft and delicious cakes perfect for birthdays, weddings, and special occasions ready for you to enjoy</p>
             <p><strong>Ksh 1500 - 5000</strong></p>
             <a href="order.html">
-                <button>Order Cake</button>
+            <button onclick="openModal('cakes')">View More</button>
+            <button onclick="openModal('pastries')">View More</button>
+            <button onclick="openModal('bread')">View More</button>
+            <button onclick="openModal('desserts')">View More</button>
             </a>
         </div>
 
@@ -49,19 +53,19 @@
             <h3>Pastries</h3>
             <p>Freshly baked pastries with rich flavors and a soft texture,delicacies for you to munch.</p>
             <p><strong>Ksh 100 - 500</strong></p>
-            <a href="order.html">
-                <button>Order Pastries</button>
-            </a>
+            <a href="order.html"></a>
+            <button onclick="openModal('pastries')">View More</button>
         </div>
+
         <!-- BREAD -->
         <div class="service-item">
             <img src="images/bread.jpg" class="images">
             <h3>Bread</h3>
             <p>Fresh, soft, and healthy bread baked daily for your everyday needs,white or brown bread available</p>
             <p><strong>Ksh 50 - 200</strong></p>
-            <a href="order.html">
-                <button>Order Bread</button>
-            </a>
+            <a href="order.html"></a>
+            <button onclick="openModal('bread')">View More</button>
+            
         </div>
 
         <!-- DESSERTS -->
@@ -74,21 +78,46 @@
                 <button>Order Desserts</button>
             </a>
         </div>
-<section id="cart-section">
 
-    <h2>Your Cart</h2>
-
-    <div id="cart">
-        <p>No items in cart</p>
-    </div>
-
-    <button onclick="sendOrder()">Send Order</button>
-
-</section>
 
         </main>
 <footer>
-    <p>&copy; 2026 Kabz Bakery</p>
+    <footer class="footer">
+
+<div class="footer-container">
+
+    <div class="footer-section">
+        <h3>Kabz Bakery</h3>
+        <p>Freshly baked goods every day.</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Services</h3>
+        <p>Cakes</p>
+        <p>Bread</p>
+        <p>Pastries</p>
+        <p>Desserts</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Twitter</p>
+    </div>
+
+</div>
+
+<p class="footer-bottom">&copy; 2026 Kabz Bakery</p>
+
 </footer>
     </div>
 </section>

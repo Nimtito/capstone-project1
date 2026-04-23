@@ -17,7 +17,9 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="order.html">Order</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+            <li><a href="order.html"> Cart</a></li>
+
         </ul>
     </nav>
 
@@ -40,17 +42,15 @@
         <option>Pastries</option>
         <option>Bread</option>
         <option>Desserts</option>
-    <option value="">Delivery Option</option>
-    <option>Pick Up</option>
-    <option>Home Delivery</option>
+<select id="deliveryOption" onchange="toggleAddress()">
+    <option value="">Select Option</option>
+    <option value="pickup">Pick Up</option>
+    <option value="delivery">Delivery</option>
 </select>
 
-    </select>
+<input type="date">
 
-    <input type="number" placeholder="Quantity" required>
-
-    <button type="submit">Submit Order</button>
-</form>
+<input type="text" id="address" placeholder="Delivery Address" style="display:none;">
     
     </form>
 
@@ -58,8 +58,45 @@
 
 </main>
 
-<footer>
-    <p>&copy; 2026 Kabz Bakery</p>
+<footer><footer>
+    
+    
+<footer class="footer">
+
+<div class="footer-container">
+
+    <div class="footer-section">
+        <h3>Kabz Bakery</h3>
+        <p>Freshly baked goods every day.</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Services</h3>
+        <p>Cakes</p>
+        <p>Bread</p>
+        <p>Pastries</p>
+        <p>Desserts</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Twitter</p>
+    </div>
+
+</div>
+
+<p class="footer-bottom">&copy; 2026 Kabz Bakery</p>
+
 </footer>
 
 </body>
