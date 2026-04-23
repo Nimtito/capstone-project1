@@ -303,7 +303,16 @@ footer{
     grid-template-columns:repeat(4,1fr);
     gap:20px;
     text-align:left;
+}.footer-section{
+    display:flex;
+    flex-direction:column; /* 🔥 makes them vertical */
+    gap:8px;
 }
+
+.footer-section a{
+    display:block;
+}
+
 
 
 

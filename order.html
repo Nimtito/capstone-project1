@@ -53,7 +53,27 @@
 <input type="text" id="address" placeholder="Delivery Address" style="display:none;">
     
     </form>
+<section id="cart">
 
+    <div id="cart-empty">
+        <h2>Your cart is empty</h2>
+        <p>Browse our products and discover our best deals</p>
+
+        <a href="order.html">
+            <button>Start Ordering</button>
+        </a>
+    </div>
+
+    <div id="cart-content" style="display:none;">
+        <div id="cart-items"></div>
+
+        <div id="cart-summary">
+            <h3>Total: Ksh <span id="total">0</span></h3>
+            <button onclick="goToCheckout()">Checkout</button>
+        </div>
+    </div>
+
+</section>
 </section>
 
 </main>
