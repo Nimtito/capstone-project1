@@ -1,121 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order - Kabz Bakery</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="order.css">
 </head>
 <body>
 
-<header class="header">
-    <div id="logo_div">
-        <img src="images/logo.png" class="logo">
-        <h1>Kabz Bakery</h1>
-    </div>
+<header>
+    <h1>Kabz Bakery</h1>
+</header>
 
+<main>
+
+    <h2 class="page-title">Order Cakes</h2> 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="order.html">Order</a></li>
-            <li><a href="contact.html">Contact</a></li> 
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="order.html"> Cart</a></li>
 
         </ul>
     </nav>
 
-    <a href="order.html">
-        <button id="header-btn">Order Now</button>
-    
-</header>
 
-<main>
+    <!-- PRODUCTS GRID -->
+    <section class="products">
 
-<section id="contact">
-    <h2>Place Your Order</h2>
-<form class="order-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="tel" placeholder="Phone Number" required>
-
-    <select required>
-        <option value="">Select Product</option>
-        <option>Cake</option>
-        <option>Pastries</option>
-        <option>Bread</option>
-        <option>Desserts</option>
-<select id="deliveryOption" onchange="toggleAddress()">
-    <option value="">Select Option</option>
-    <option value="pickup">Pick Up</option>
-    <option value="delivery">Delivery</option>
-</select>
-
-<input type="date">
-
-<input type="text" id="address" placeholder="Delivery Address" style="display:none;">
-    
-    </form>
-<section id="cart">
-
-    <div id="cart-empty">
-        <h2>Your cart is empty</h2>
-        <p>Browse our products and discover our best deals</p>
-
-        <a href="order.html">
-            <button>Start Ordering</button>
-        </a>
-    </div>
-
-    <div id="cart-content" style="display:none;">
-        <div id="cart-items"></div>
-
-        <div id="cart-summary">
-            <h3>Total: Ksh <span id="total">0</span></h3>
-            <button onclick="goToCheckout()">Checkout</button>
+        <div class="product-card">
+            <img src="images/vanilla.jpg" alt="">
+            <h3>Vanilla Cake</h3>
+            <p>Ksh 1300</p>
+            <button>Add to Cart</button>
         </div>
-    </div>
 
-</section>
-</section>
+        <div class="product-card">
+            <img src="images/chocolate.jpg" alt="">
+            <h3>Chocolate Cake</h3>
+            <p>Ksh 1500</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/redvelvet.jpg" alt="">
+            <h3>Red Velvet Cake</h3>
+            <p>Ksh 1700</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/strawberry.jpg" alt="">
+            <h3>Strawberry Cake</h3>
+            <p>Ksh 1600</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/blackforest.jpg" alt="">
+            <h3>Black Forest</h3>
+            <p>Ksh 1800</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/fruitcake.jpg" alt="">
+            <h3>Fruit Cake</h3>
+            <p>Ksh 1400</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/custom.jpg" alt="">
+            <h3>Custom Cake</h3>
+            <p>Ksh 2000</p>
+            <button>Add to Cart</button>
+        </div>
+    <!-- ================= BREAD ================= -->
+    <h2 class="category-title">Bread</h2>
+    <section class="products">
+
+        <div class="product-card">
+            <img src="images/bread1.jpg">
+            <h3>White Bread</h3>
+            <p>Ksh 100</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bread2.jpg">
+            <h3>Brown Bread</h3>
+            <p>Ksh 120</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bread3.jpg">
+            <h3>Milk Bread</h3>
+            <p>Ksh 130</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bread4.jpg">
+            <h3>Whole Wheat</h3>
+            <p>Ksh 150</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bread5.jpg">
+            <h3>Sweet Bread</h3>
+            <p>Ksh 140</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bread6.jpg">
+            <h3>Sandwich Bread</h3>
+            <p>Ksh 110</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bread7.jpg">
+            <h3>French Bread</h3>
+            <p>Ksh 160</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+    <!-- ================= PASTRIES ================= -->
+    <h2 class="category-title">Pastries</h2>
+    <section class="products">
+
+        <div class="product-card">
+            <img src="images/pastry1.jpg">
+            <h3>Croissant</h3>
+            <p>Ksh 200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pastry2.jpg">
+            <h3>Doughnut</h3>
+            <p>Ksh 150</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pastry3.jpg">
+            <h3>Puff Pastry</h3>
+            <p>Ksh 220</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pastry4.jpg">
+            <h3>Meat Pie</h3>
+            <p>Ksh 250</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pastry5.jpg">
+            <h3>Samosa</h3>
+            <p>Ksh 100</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pastry6.jpg">
+            <h3>Cinnamon Roll</h3>
+            <p>Ksh 230</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/pastry7.jpg">
+            <h3>Swiss Roll</h3>
+            <p>Ksh 210</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+    <!-- ================= DESSERTS ================= -->
+    <h2 class="category-title">Desserts</h2>
+    <section class="products">
+
+        <div class="product-card">
+            <img src="images/dessert1.jpg">
+            <h3>Ice Cream</h3>
+            <p>Ksh 250</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/dessert2.jpg">
+            <h3>Cheesecake</h3>
+            <p>Ksh 300</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/dessert3.jpg">
+            <h3>Brownie</h3>
+            <p>Ksh 200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/dessert4.jpg">
+            <h3>Custard</h3>
+            <p>Ksh 180</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/dessert5.jpg">
+            <h3>Fruit Salad</h3>
+            <p>Ksh 220</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/dessert6.jpg">
+            <h3>Pudding</h3>
+            <p>Ksh 210</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/dessert7.jpg">
+            <h3>Chocolate Mousse</h3>
+            <p>Ksh 270</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+</main>
+    </section>
 
 </main>
 
-<footer><footer>
-    
-    
+<footer>
 <footer class="footer">
 
-<div class="footer-container">
+    <div class="footer-container">
 
-    <div class="footer-section">
-        <h3>Kabz Bakery</h3>
-        <p>Freshly baked goods every day.</p>
+        <div class="footer-section">
+            <h3>Kabz Bakery</h3>
+            <p>Freshly baked goods every day.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Services</h3>
+            <p>Cakes</p>
+            <p>Bread</p>
+            <p>Pastries</p>
+            <p>Desserts</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+        </div>
+
     </div>
 
-    <div class="footer-section">
-        <h3>Services</h3>
-        <p>Cakes</p>
-        <p>Bread</p>
-        <p>Pastries</p>
-        <p>Desserts</p>
-    </div>
-
-    <div class="footer-section">
-        <h3>Quick Links</h3>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="order.html">Order</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="footer-section">
-        <h3>Follow Us</h3>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>Twitter</p>
-    </div>
-
-</div>
-
-<p class="footer-bottom">&copy; 2026 Kabz Bakery</p>
+    <p class="footer-bottom">&copy; 2026 Kabz Bakery</p>
 
 </footer>
 

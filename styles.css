@@ -151,7 +151,8 @@ section{
 
 #service-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,
+    minmax(250px,1fr));
     gap:20px;
 }
 
@@ -174,33 +175,20 @@ section{
     border-radius:10px;
 }
 
-.order-form{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-}
-input, textarea{
-    outline:auto;
-    caret-color:black;
-}
-.order-form input,
-.order-form select{
-    width:280px;
-    max-width:90%;
-    padding:10px;
-    border-radius:8px;
-}
 
 
-/* CONTACT SECTION */
+
+
+
+
+
 #contact{
     width:90%;
     margin:auto;
     padding:40px 20px;
 }
 
-/* TITLE */
+
 .contact-title{
     text-align:center;
     font-size:2em;
@@ -214,7 +202,7 @@ input, textarea{
     color:#555;
 }
 
-/* TOP CARDS */
+
 .contact-cards{
     display:flex;
     gap:20px;
@@ -237,14 +225,13 @@ input, textarea{
     color:#fff;
 }
 
-/* MAIN SECTION */
+
 .contact-main{
     display:flex;
     gap:20px;
     flex-wrap:wrap;
 }
 
-/* MAP */
 .map{
     flex:1;
     min-width:300px;
@@ -253,7 +240,6 @@ input, textarea{
     overflow:hidden;
 }
 
-/* FORM */
 .contact-form{
     flex:1;
     min-width:300px;
