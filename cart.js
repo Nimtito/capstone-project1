@@ -50,44 +50,6 @@ document.getElementById("loginForm")?.addEventListener("submit", function(e){
 });
 
 
-//  DISPLAY CART 
-function displayCart(){
-    const cartEmpty = document.getElementById("cart-empty");
-    const cartContent = document.getElementById("cart-content");
-    const itemsDiv = document.getElementById("cart-items");
-    const totalEl = document.getElementById("total");
-
-    if(cart.length === 0){
-        cartEmpty.style.display = "block";
-        cartContent.style.display = "none";
-        return;
-    }
-
-    cartEmpty.style.display = "none";
-    cartContent.style.display = "block";
-
-    itemsDiv.innerHTML = "";
-    let total = 0;
-
-    cart.forEach((item, index) => {
-        total += item.price * item.qty;
-
-        itemsDiv.innerHTML += `
-            <div class="cart-item">
-                <p>${item.name}</p>
-                <p>Ksh ${item.price} x ${item.qty}</p>
-                <button onclick="removeItem(${index})">Remove</button>
-            </div>
-        `;
-    });
-
-    totalEl.innerText = total;
-}
-
-
-
-
-
 //  CHECKOUT 
 document.getElementById("checkoutForm")?.addEventListener("submit", function(e){
     e.preventDefault();
